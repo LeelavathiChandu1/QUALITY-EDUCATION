@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="reviews.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="review.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        html{
+            scroll-behavior: smooth;
+            font-family: tahoma;
+        }
+        h1{ 
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 35%;
+            color: purple;
+        }
+        ul{
+            list-style: none;
+            height: 100%;
+            width: 1 00px;
+            position: fixed;
+            top: 0;
+            left: 0px;
+            background:darkblue ;
+            box-shadow: 2px 0px 5px black ;
+            
+        }
+        ul li{
+            margin: 5px;
+            padding: 5px;
+            margin-top: 75px;
+            text-align: center;
+
+        }
+        ul li  a{
+            color: white;
+            
+            text-decoration: none;
+            font-size: 20px;
+            padding: 5px;
+        }
+        ul li a:hover{
+            background: white;
+            
+            color: #34557c;
+            border-radius: 5px;
+
+        }
+        section{
+            height: 100vh;
+            width: 70vw; 
+            margin-left: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #section1{
+            background: white;
+
+        
+        }
+        #section2{
+            background: white;
+
+        
+        }
+        #section3{
+            background: white;
+        
+        }
+        #section4{
+            background: white;
+
+        
+        }
+        #section5 {
+            background: white;
+        }
+        .content .main .card{
+            /* margin:5px; */
+            border: 1px solid black;
+            padding-bottom: 20px;
+            /* padding: 5px; */
+            height:310px;
+            justify-content: baseline;
+            /* padding-top: 10px; */
+        }
+        .backclr{
+            background-color: lightblue;
+            color: white;
+            text-align: center;
+            height: 100px;
+            width : 200px;
+
+            
+        }
+        .logo {
+    color: var(--color-black);
+    font-size: 30px;
+  }
+  
+  .logo span {
+    color: var(--blue);
+  }
+  
+  .menu-bar {
+   background-color: var(--blue); 
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  
+    position: relative;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color: var(--blue);
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    /* top: 100%; */
+    color: rgb(19, 7, 188);
+    background-color: var(--blue);
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--blue);
+  }
+  
+  .hero {
+    height: calc(15vh - 80px);
+    background-image: url(./bg.jpg);
+    background-position: center;
+  }
+      
+</style>
+
+</head>
+<body>
+    <div class="menu-bar">
+        <h1 class="logo">Tech<span>Educa.</span></h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="scholarships.html">Scholarship</a></li>
+          <li><a href="examdates.html">Examdates</a></li>
+          <li><a href="strategies.html">Strategies</a></li>
+        
+          <li><a href="mock.html">Mocktests<i class="fas fa-caret-down"></i></a>
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="loginsignup.html"> Login/signup</a></li>
+                   
+                  
+                  </ul>
+                </div>
+          </li>
+    
+          </li>
+         
+        </ul>
+      </div>
+      <div class="hero">
+        &nbsp;
+      </div>
+    
+    <ul>
+        <li><a href = "#section1" >10th class</a></li>
+        <li><a href = "#section2">Intermediate-MPC</a></li>
+        <li><a href = "#section3">B.tech</a></li>
+        <li><a href = "#section4">MBA</a></li>
+        <li><a href = "#section5">MBBS</a></li>
+    </ul>
+ 
+    <div class="content">
+        
+        <section id = "section1">
+            <div class="main">
+                <div class="card">
+                    <center><div class="backclr"><h2>SSE</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 21-03-2023</p><br>
+                        <p><b>Subject Marks:</b>100</p><br>
+                        <p><b>PassMark:</b>35</p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+        
+                    <center><div class="backclr"><h2>POLYCET</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 01-04-2023</p><br>
+                        <p><b>Subject Marks:</b>120</p><br>
+                        <p><b>PassMark:</b> no </p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+                
+        
+        
+                <div class="card">
+                    <center><div class="backclr"><h2>NTSE</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 21-03-2023</p><br>
+                        <p><b>Subject Marks:</b>100</p><br>
+                        <p><b>PassMark:</b>35</p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+        
+                    <center><div class="backclr"><h2>KYPC</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 01-04-2023</p><br>
+                        <p><b>Subject Marks:</b>120</p><br>
+                        <p><b>PassMark:</b> no </p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+                
+        
+                
+                      
+        
+            </div>
+        </section>
+        <section id = "section2">
+            <div class="main">
+
+  
+                <div class="card">
+                    <center><div class="backclr"><h2>JEE MAINS</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 21-03-2023</p><br>
+                        <p><b>Subject Marks:</b>100</p><br>
+                        <p><b>PassMark:</b>35</p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+        
+                    <center><div class="backclr"><h2>EAPCET</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 01-04-2023</p><br>
+                        <p><b>Subject Marks:</b>120</p><br>
+                        <p><b>PassMark:</b> no </p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+                
+        
+        
+                <div class="card">
+                    <center><div class="backclr"><h2>JEE ADVANCE</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 21-03-2023</p><br>
+                        <p><b>Subject Marks:</b>100</p><br>
+                        <p><b>PassMark:</b>35</p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+        
+                    <center><div class="backclr"><h2>SRM</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 01-04-2023</p><br>
+                        <p><b>Subject Marks:</b>120</p><br>
+                        <p><b>PassMark:</b> no </p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+                
+        
+            </div>
+        </section>
+        <section id = "section3">
+            <div class="main">
+
+  
+                <div class="card">
+                    <center><div class="backclr"><h2>GATE</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 21-03-2023</p><br>
+                        <p><b>Subject Marks:</b>100</p><br>
+                        <p><b>PassMark:</b>35</p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+        
+                    <center><div class="backclr"><h2>GRM</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 01-04-2023</p><br>
+                        <p><b>Subject Marks:</b>120</p><br>
+                        <p><b>PassMark:</b> no </p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+                
+        
+        
+                <div class="card">
+                    <center><div class="backclr"> <h2>NATA</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 21-03-2023</p><br>
+                        <p><b>Subject Marks:</b>100</p><br>
+                        <p><b>PassMark:</b>35</p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+        
+                    <center><div class="backclr"><h2>APPTITUDE</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 01-04-2023</p><br>
+                        <p><b>Subject Marks:</b>120</p><br>
+                        <p><b>PassMark:</b> no </p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id = "section4">
+            <div class="main">
+
+  
+                <div class="card">
+                    <center><div class="backclr"><h2>GMAT</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 21-03-2023</p><br>
+                        <p><b>Subject Marks:</b>100</p><br>
+                        <p><b>PassMark:</b>35</p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+        
+                    <center><div class="backclr"><h2>CMAT</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 01-04-2023</p><br>
+                        <p><b>Subject Marks:</b>120</p><br>
+                        <p><b>PassMark:</b> no </p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+                
+        
+        
+                <div class="card">
+                    <center><div class="backclr"><h2>CAT</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 21-03-2023</p><br>
+                        <p><b>Subject Marks:</b>100</p><br>
+                        <p><b>PassMark:</b>35</p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+        
+                    <center><div class="backclr"><h2>NMAT</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 01-04-2023</p><br>
+                        <p><b>Subject Marks:</b>120</p><br>
+                        <p><b>PassMark:</b> no </p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+                
+                </div>
+            
+        </section>
+        <section id = "section5">
+            <div class="main">
+
+                <div class="card">
+                    <center><div class="backclr"><h2>NEET</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 21-03-2023</p><br>
+                        <p><b>Subject Marks:</b>100</p><br>
+                        <p><b>PassMark:</b>35</p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+        
+                    <center><div class="backclr"><h2>PG</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 01-04-2023</p><br>
+                        <p><b>Subject Marks:</b>120</p><br>
+                        <p><b>PassMark:</b> no </p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+                
+        
+        
+                <div class="card">
+                    <center><div class="backclr"><h2>DENTAL</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 21-03-2023</p><br>
+                        <p><b>Subject Marks:</b>100</p><br>
+                        <p><b>PassMark:</b>35</p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+        
+                    <center><div class="backclr"><h2>PHARMACY</h2></div></center><br>
+                    <div class="des">
+                        <p><b>Exam registration start date : </b> 01-04-2023</p><br>
+                        <p><b>Subject Marks:</b>120</p><br>
+                        <p><b>PassMark:</b> no </p><br>
+                        <p><b>Eligibility : </b> 10th</p><br>
+                        <p><b>Exam registration end date : </b> 27-03-2023</p>
+                    </div>
+                </div>
+                </div>
+                </section>
+    </div>
+</body>
+</html>
